@@ -1,2 +1,44 @@
 @import url(./styles/reset.css);
 @import url(./styles/boxLayout.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  background-color: #f0f0f0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Space Mono', monospace;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  color: #000000;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mainViewContainer {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: #ffffff;
+  margin: 20px auto;
+  border-radius: 8px;
+  filter: drop-shadow(0px 5px 15px #d8d8d2);
+}
+
+@media screen and (max-width: 480px) {
+  .mainViewContainer {
+    width: 95%;
+  }
+}

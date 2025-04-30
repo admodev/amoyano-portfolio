@@ -1,0 +1,32 @@
+.heroHeaderContainer {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.heroHeaderContainerTitle {
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #606060;
+  font-size: 18px;
+}
+
+.heroHeaderContainerSubtitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #00b563;
+  font-size: 14px;
+  background-color: #28c78026;
+  padding: 8px 15px;
+  border-radius: 25px;
+}

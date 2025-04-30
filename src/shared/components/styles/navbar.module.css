@@ -1,0 +1,27 @@
+.navbarContainer {
+  height: 60px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  background-color: #ffffff;
+  margin: 10px auto;
+  border-radius: 8px;
+  filter: drop-shadow(0px 5px 15px #d8d8d2);
+}
+
+.navLink {
+  text-transform: uppercase;
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: #000000;
+}
+
+@media screen and (max-width: 480px) {
+  .navbarContainer {
+    width: 95%;
+  }
+}

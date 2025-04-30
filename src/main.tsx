@@ -15,15 +15,19 @@ import NotFoundPage from './shared/views/NotFoundPage';
 
 // Components
 import ErrorBoundary from './shared/components/ErrorBoundary';
+import NavBar from './shared/components/NavBar';
 
 createRoot(document.getElementById('root')!).render(
   <ErrorBoundary>
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='*' element={<NotFoundPage />} />
-      </Routes>
+      <NavBar />
+      <div className='mainViewContainer'>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='*' element={<NotFoundPage />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   </ErrorBoundary>
 );
