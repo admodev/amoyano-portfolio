@@ -1,9 +1,16 @@
-.heroHeaderContainer {
+.mainHeaderContainer {
+  display: flex;
+  flex-direction: column;
   width: 95%;
+  height: auto;
+}
+
+.heroHeaderContainer {
+  width: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .heroHeaderContainerTitle {
@@ -12,7 +19,7 @@
   font-weight: 600;
   font-style: normal;
   color: #606060;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .heroHeaderContainerSubtitle {
@@ -29,4 +36,21 @@
   background-color: #28c78026;
   padding: 8px 15px;
   border-radius: 25px;
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #606060;
+  font-size: 20px;
+  margin: 60px 0 0 0;
+}
+
+.subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #606060;
+  font-size: 18px;
+  margin: 35px 0 0 0;
+  line-height: 30px;
 }
